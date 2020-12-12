@@ -13,7 +13,7 @@ docker run --rm --label=certbot-idp-extract \
   -v $CERTBOT_VOL_ETC:/etc/letsencrypt \
   -v $IDP_HOME_LOCAL/credentials:/data \
   ianayoung/openssl openssl pkcs12 -export \
-    -out      /data/idp-userfacing-new.p12 \
+    -out      /data/idp-userfacing.p12 \
     -inkey    /etc/letsencrypt/live/idp.catnip.ch/privkey.pem \
     -in       /etc/letsencrypt/live/idp.catnip.ch/cert.pem \
     -certfile /etc/letsencrypt/live/idp.catnip.ch/chain.pem \
