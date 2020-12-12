@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Password for any auto-generated user-facing TLS credential
-UFPASS=userfacing-changethis
+UFPASS=changeit
 
 # Password for any auto-generated cookie encryption keystore
-SEALPASS=sealer-changethis
+SEALPASS=changeit
 
 # Scope for the IdP
 SCOPE=catnip.ch
