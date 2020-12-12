@@ -14,7 +14,7 @@ docker run --rm --label=certbot-idp-extract \
   -v $IDP_HOME_LOCAL/credentials:/data \
   ianayoung/openssl openssl pkcs12 -export \
     -out      /data/idp-userfacing-new.p12 \
-    -inkey    /etc/letsencrypt/live/idp2.iay.org.uk/privkey.pem \
-    -in       /etc/letsencrypt/live/idp2.iay.org.uk/cert.pem \
-    -certfile /etc/letsencrypt/live/idp2.iay.org.uk/chain.pem \
+    -inkey    /etc/letsencrypt/live/idp.catnip.ch/privkey.pem \
+    -in       /etc/letsencrypt/live/idp.catnip.ch/cert.pem \
+    -certfile /etc/letsencrypt/live/idp.catnip.ch/chain.pem \
     -passout  pass:$BROWSER_CERT_PASSWORD
